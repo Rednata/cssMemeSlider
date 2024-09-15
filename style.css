@@ -63,19 +63,18 @@ fieldset {
 }
 
 .wrap {
-  border: 1px solid var(--text);
-  border-radius: 16px;
-  padding-top: 100px;
+  border: 0.125rem solid var(--text);
+  border-radius: 1rem;
   display: grid;
-  grid-template-columns: 1fr 130px;
+  grid-template-columns: 1fr 8rem;
   justify-content: space-between;
-  row-gap: 20px;
-  padding: 40px 40px;
+  row-gap: 1.25rem;
+  padding: 2.5rem;
   overflow: hidden;
 }
 
 img {
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 
 .control {
@@ -84,7 +83,7 @@ img {
   grid-column: 2 / 3;
   grid-row: 2 /3 ;
   justify-self: flex-end;
-  gap: 3px;
+  gap: 0.18rem;
   background-color: var(--main);
 }
 
@@ -97,16 +96,16 @@ img {
 .control__label {
   display: block;
   cursor: pointer;
-  padding: 10px 5px;
+  padding: 0.625rem 0.31rem;
 }
 
 .control__label span {
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   background-color: var(--accent);
-  border: 2px solid var(--accent);
+  border: 0.125rem solid var(--accent);
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
@@ -136,7 +135,6 @@ img {
 .slider-box {
   display: flex;
   overflow: hidden;
-  /* justify-content: center; */
 }
 
 /* =================  CONTENT =====================  */
@@ -250,13 +248,9 @@ img {
 
   .content {
     grid-row: 3 / 4 ;
-    /* font-size: 0.8rem; */
   }
 
   .content-wrap {
     flex-grow: 0;
-
   }
-
-
 }
