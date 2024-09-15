@@ -263,6 +263,6 @@ img {
 
   .content-wrap {
     flex-grow: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
   }
 }
