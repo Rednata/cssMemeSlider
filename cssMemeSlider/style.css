@@ -81,6 +81,7 @@ fieldset {
   row-gap: 1.25rem;
   padding: 2.5rem;
   overflow: hidden;
+  max-width: 44.4rem;
 }
 
 img {
@@ -119,11 +120,7 @@ img {
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-.control__label:hover span{
-  background-color: var(--text);
-  border-color: var(--text);
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
+
 
 .control__label:has(+.control__input:checked) span{
   border-color: var(--accent);
@@ -131,10 +128,7 @@ img {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.control__label:has(+.control__input:checked):hover span{
-  border-color: var(--text);
-  transition: border-color 0.3s ease-in-out;
-}
+
 
 
 /* =================  SLIDER ================== */
@@ -264,5 +258,24 @@ img {
   .content-wrap {
     flex-grow: 0;
     padding-bottom: 0.625rem;
+  }
+}
+
+@media (hover: hover) {
+  .control__label:hover span{
+    background-color: var(--text);
+    border-color: var(--text);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+
+  .control__label:has(+.control__input:checked):hover span{
+    border-color: var(--text);
+    transition: border-color 0.3s ease-in-out;
+  }
+}
+
+@media (hover: none) {
+  .control__input, .control__label {
+    cursor: none;
   }
 }
