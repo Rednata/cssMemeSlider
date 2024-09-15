@@ -2,6 +2,7 @@
   --main: #141633;
   --text: #fff;
   --accent: #767cd4;
+  --time: 0.8s;
 }
 html {
   box-sizing: border-box;
@@ -161,44 +162,44 @@ img {
 }
 
 .content__title_1 {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out;
 }
 .content__title_2 {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out;
 }
 .content__title_3 {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out;
 }
 .content__title_4 {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out;
 }
 
 /* ============== MOVIE-SLIDE ================ */
 .slide {
   opacity: 1;
-  transform: translateX(120%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateX(100%);
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 
 .control:has(.control__input[id='mem1']:checked)+.slider .slider-box .slide_1[data='mem1']  {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 .control:has(.control__input[id='mem2']:checked)+.slider .slider-box .slide_1[data='mem2']  {
   opacity: 1;
   transform: translateX(-100%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 .control:has(.control__input[id='mem3']:checked)+.slider .slider-box .slide_1[data='mem3']  {
   opacity: 1;
   transform: translateX(-200%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 .control:has(.control__input[id='mem4']:checked)+.slider .slider-box .slide_1[data='mem4']  {
   opacity: 1;
   transform: translateX(-300%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 
 /* ============== MOVIE-TITLE ================ */
@@ -206,23 +207,23 @@ img {
 .control:has(.control__input[id='mem1']:checked)~.content>.content-wrap>.content__title_1  {
   opacity: 1;
   transform: translateX(0);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 
 .control:has(.control__input[id='mem2']:checked)~.content>.content-wrap>.content__title_2  {
   opacity: 1;
   transform: translateX(-130%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 .control:has(.control__input[id='mem3']:checked)~.content>.content-wrap>.content__title_3  {
   opacity: 1;
   transform: translateX(-166%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 .control:has(.control__input[id='mem4']:checked)~.content>.content-wrap>.content__title_4  {
   opacity: 1;
   transform: translateX(-561%);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity var(--time) ease-in-out, transform var(--time) ease-in-out;
 }
 
 
